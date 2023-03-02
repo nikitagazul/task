@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 2 5px;
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: black; }
+  body .header {
+    grid-area: header; }
+  body .countdown {
+    grid-area: countdown; }
+  body .nav {
+    grid-area: nav; }
+  body .section {
+    grid-area: section; }
+  body .article {
+    grid-area: article; }
+  body .aside {
+    grid-area: aside; }
+  body .footer {
+    grid-area: footer; }
+  body div.container {
+    display: grid;
+    grid-template-areas: 'header header header header header header' 'countdown countdown countdown countdown countdown countdown' 'nav nav nav nav nav nav' 'section section section section aside aside' 'article article article article aside aside' 'footer footer footer footer footer footer';
+    gap: 0.5rem;
+    text-align: center;
+    color: white; }
+    body div.container div {
+      padding: 30px 0;
+      border-radius: 2px;
+      position: relative; }
+      body div.container div h2 {
+        font-size: 3.5em;
+        margin: 0;
+        -webkit-text-stroke: .2px #6699CC;
+        -webkit-box-reflect: below -28px linear-gradient(transparent 35%, rgba(0, 0, 0, 0.4)); }
+    body div.container div.header {
+      background-color: #301934; }
+    body div.container div.countdown {
+      display: flex;
+      justify-content: center;
+      background-color: #808080; }
+      body div.container div.countdown table {
+        width: 40%; }
+        body div.container div.countdown table tr:first-child {
+          font-size: 3.5em; }
+        body div.container div.countdown table tr:last-child {
+          font-size: 1em; }
+      body div.container div.countdown h2 {
+        display: none; }
+    body div.container div.nav {
+      background-color: #0E86D4; }
+    body div.container div.section {
+      background-color: #E4B7A0; }
+    body div.container div.article {
+      background-color: #2f6468; }
+    body div.container div.aside {
+      display: grid;
+      align-items: center;
+      background-color: #A30000; }
+    body div.container div.footer {
+      background-color: #301934; }
+  body div#popup {
+    width: 500px;
+    height: 400px;
+    display: none;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%); }
+    body div#popup button {
+      position: absolute;
+      right: 50px;
+      top: 15px;
+      font-size: 2em;
+      background: none;
+      border: none; }
